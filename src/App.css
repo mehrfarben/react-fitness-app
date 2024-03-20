@@ -14,13 +14,11 @@ body {
   justify-content: center;
 }
 
-.exercises {
-  display: flex;
-  justify-content: center;
+.exercises-done {
   position: relative;
   background-color: #dfd;
   width: 60vw;
-  min-height: 100vh;
+  min-height: 89.9vh;
 }
 
 .exercise-content {
@@ -43,8 +41,10 @@ body {
 }
 
 .column {
+  position: relative;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .row {
@@ -52,31 +52,45 @@ body {
   flex-direction: row;
 }
 
-.exec-name {
+.exercise-name {
   margin-left: 70px;
 }
 
-.exec-values {
-  margin-top: 12%;
-  margin-left: 10%;
+.mantine-Modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.exercise-options {
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  overflow-x: auto;
+  height: 450px;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mantine-NumberInput-label {
+  margin-top: 1.5rem;
   position: relative;
   left: 40px;
 }
 
 .mantine-NumberInput-wrapper {
   margin-left: 1rem;
+  width: 40%;
 }
 
 .add {
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 60px;
   background-color: green;
   position: absolute;
-  right: 8%;
-  bottom: 15%;
+  right: 10px;
+  bottom: 0;
 }
 
 .add:hover {
@@ -90,7 +104,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   width: 96%;
-  min-height: 96%;
+  min-height: 80vh;
   border-radius: 2rem;
   padding: 1.5rem;
 }
@@ -98,10 +112,21 @@ body {
 .exercise-option {
   margin-right: 2rem;
   margin-bottom: 2rem;
+  transition: 100ms ease-in-out;
+}
+
+.exercise-option:hover {
+  cursor: pointer;
+  transform: scale(102%);
+  transition: 100ms ease-in-out;
+}
+
+img:focus {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 .mantine-Image-root {
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   height: 150px;
   width: 150px;
 }
